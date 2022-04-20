@@ -1,0 +1,43 @@
+.footer {
+  background-color: $back-buttons-first;
+  color: $color-main-white;
+
+  &-logo {
+    max-width: 180px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+
+  &-links {
+    a {
+      color: $color-main-white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color .2s;
+      padding: 5px;
+
+      &:hover {
+        color: $color-second;
+      }
+    }
+  }
+
+  &-copyright {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+
+    &__label {
+      font-size: 12px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

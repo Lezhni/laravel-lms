@@ -1,0 +1,29 @@
+.support {
+  &-accordion {
+    border: 0;
+  }
+
+  &-card {
+    border: 0;
+  }
+
+  &-header {
+    border: 0;
+  }
+
+  &-tab {
+    border: 0;
+    padding: 1rem;
+
+    &.not-collapsed {
+      &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}

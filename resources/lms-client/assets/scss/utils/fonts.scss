@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Montserrat Light';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/montserrat-v15-latin_cyrillic-300.woff2') format('woff2'),
+  url('/assets/fonts/montserrat-v15-latin_cyrillic-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat Light Italic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/montserrat-v15-latin_cyrillic-300italic.woff2') format('woff2'),
+  url('/assets/fonts/montserrat-v15-latin_cyrillic-300italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'),
+  url('/assets/fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/montserrat-v15-latin_cyrillic-500.woff2') format('woff2'),
+  url('/assets/fonts/montserrat-v15-latin_cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'),
+  url('/assets/fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat Bold Italic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/montserrat-v17-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700italic.woff2') format('woff2'),
+  url('/assets/fonts/montserrat-v17-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700italic.woff') format('woff');
+}

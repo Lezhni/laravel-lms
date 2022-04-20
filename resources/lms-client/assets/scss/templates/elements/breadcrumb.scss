@@ -1,0 +1,44 @@
+.breadcrumb {
+  background-color: white;
+  border-bottom: 1px solid $border-gray-light;
+  min-width: 100%;
+
+
+  &-item {
+    padding-right: 0.5rem;
+    padding-left: 0;
+    display: inline-block;
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
+}
+
+.breadcrumbs-wrapper {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    display: inline-block;
+    white-space: nowrap;
+    &-item {
+      display: inline-block;
+    }
+  }
+
+  .breadcrumbs-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-left: 15px;
+  }
+}
+

@@ -1,0 +1,133 @@
+p, span, h1, h2, h3, h4, h5, h6, strong, b, i, em, a, li {
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+
+body {
+  font-family: 'Montserrat Regular', sans-serif;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+section {
+  //background-color: #fafafa;
+}
+
+input[type=file] {
+  cursor: pointer;
+}
+
+button.adaptive-btn {
+  margin-left: 20px;
+}
+
+strong, b, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
+.mobile-links {
+  display: none;
+}
+
+.fieldset-required label {
+  &:after {
+    content: '*';
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    color: $color-main-red;
+  }
+}
+
+//.scrolled-courses {
+//  overflow-y: scroll;
+//  height: calc(100vh - 79px);
+//}
+
+.link-span {
+  cursor: pointer;
+  transition: color .2s;
+  color: $color-primary;
+
+  &:hover {
+    color: $color-second;
+  }
+}
+
+.scrolled-content {
+  height: calc(100vh - 130px);
+
+  .__view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.scrolled-navbar {
+  height: calc(100vh - 81px);
+}
+
+.scrolled-wrapper {
+  height: calc(100vh - 81px);
+
+  .__view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.scrolled-wrapper-sidebar {
+  height: calc(100vh - 81px);
+}
+
+.sidebar-section {
+  display: flex;
+}
+
+.bg-secondary-light {
+  background-color: #dbdbdb;
+}
+
+.calendar-modal {
+  outline: none;
+  border: none;
+}
+
+.vc-popover-content-wrapper[data-v-05016e86]:not(.is-interactive) {
+  pointer-events: auto;
+}
+
+.vc-day-popover-container {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .mobile-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scrolled-courses {
+    height: calc(100vh - 66px);
+  }
+
+  .scrolled-content {
+    height: calc(100vh - 115px);
+  }
+
+  .scrolled-navbar {
+    height: calc(100vh - 68px);
+  }
+
+  .scrolled-wrapper {
+    height: calc(100vh - 68px);
+  }
+
+  .scrolled-wrapper-sidebar {
+    height: calc(100vh - 68px);
+  }
+}

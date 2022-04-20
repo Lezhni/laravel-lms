@@ -1,0 +1,1 @@
+<p>Ссылка на восстановление пароля: <a href="{{ $resetLink }}" target="_blank">{{ $resetLink  }}</a></p>

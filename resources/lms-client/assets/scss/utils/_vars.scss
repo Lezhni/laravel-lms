@@ -1,0 +1,48 @@
+//colors
+$color-main-white: white;
+$color-main-black: #484848;
+$color-main-red: #c93638;
+$color-main-gray: #959595;
+$color-main-gray-light: #ccc;
+$color-buttons: white;
+$color-second: #FF7D14;
+$color-primary: #4f6eb6;
+$color-primary-dark: #304370;
+$color-secondary: #5775b9;
+
+//backgrounds
+$back-primary: #4f6eb6;
+$back-secondary: #4f6eb6;
+$back-menu: #5775b9;
+$back-buttons: #FF7D14;
+$back-buttons-first: #5775b9;
+$back-buttons-second: #FF7D14;
+$back-sidebar: #FAFAFA;
+$back-main: #f6f6f6;
+$back-white: white;
+$back-gray: #555555;
+$back-gray-medium: #E5E5E5;
+$back-gray-light: #eaeaea;
+$back-yellow: #ffd630;
+$back-blue: #06263e;
+
+$border-gray-light: #eaeaea;
+$border-gray: #E5E5E5;
+
+//border
+$border-primary: #4f6eb6;
+$border-secondary: #5775b9;
+$border-gray: #959595;
+$border-gray-light: #e5e5e5;
+
+.blue-dark-color {
+  color: $color-secondary;
+}
+
+.orange-dark-color {
+  color: $color-second;
+}
+
+.red-color {
+  color: $color-main-red;
+}

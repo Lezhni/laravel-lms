@@ -1,0 +1,143 @@
+.calendar {
+  &-popup-wrapper {
+    max-height: 200px;
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  &-popup-item {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-primary;
+    }
+
+    &__date {
+      width: 60px;
+      border-right: 1px solid #E5E5E5;
+
+      &--day {
+        font-size: 20px;
+      }
+
+      &--time {
+        font-size: 16px;
+      }
+    }
+
+    &__title {
+      height: 100%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      &--name {
+        font-size: 14px;
+      }
+
+      &--link {
+        font-size: 12px;
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #E5E5E5;
+    }
+  }
+
+  &-date-item {
+    color: black !important;
+  }
+
+  .vc-popover-caret {
+    display: none;
+  }
+
+  .vc-popover-content {
+    border: 1px solid #E5E5E5;
+    border-left: 10px solid #FF7D14;
+    border-radius: 10px;
+  }
+
+  .vc-day-popover-container {
+    padding: 2px;
+  }
+
+  .vc-day {
+    position: relative;
+  }
+
+  .vc-highlights {
+    position: absolute;
+    bottom: -2px;
+    top: auto;
+    left: calc(50% - 3px);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    .vc-day-layer {
+      &:not(:last-child) {
+        display: none;
+      }
+    }
+  }
+
+  .vc-highlight {
+    background-color: $back-buttons-second !important;
+  }
+
+  .vc-title {
+    color: $color-secondary;
+  }
+
+  .vc-arrow {
+    border-radius: 50%;
+    background-color: #F6F7FC;
+    transition: .3s;
+
+    &:hover {
+      background-color: #dfe0e9;
+    }
+
+    svg {
+      path {
+        fill: $color-secondary;
+      }
+    }
+  }
+
+  .vc-weekday {
+    color: $color-secondary;
+  }
+
+  .vc-weekday:nth-child(6), .vc-weekday:nth-child(7) {
+    color: $color-second;
+  }
+
+  .vc-header {
+    margin-bottom: 20px;
+  }
+
+  .vc-arrows-container {
+    padding: 8px 30px;
+  }
+}
+
+#calendar-modal {
+  .modal-title {
+    color: $color-secondary;
+  }
+}
+
+

@@ -1,0 +1,52 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "build-homework-chat": "cd nova-components/HomeworkChat && npm run dev",
+        "build-homework-chat-prod": "cd nova-components/HomeworkChat && npm run prod"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "browser-sync": "^2.27.5",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "html-webpack-plugin": "^5.3.2",
+        "laravel-mix": "^6.0.29",
+        "sass": "^1.38.1",
+        "sass-loader": "^12.1.0",
+        "url-loader": "^4.1.1",
+        "vue-loader": "^15.9.8",
+        "vue-template-compiler": "^2.6.14",
+        "webpack": "^5.51.1"
+    },
+    "dependencies": {
+        "@vueuse/sound": "^1.1.7",
+        "axios": "^0.21.1",
+        "bootstrap": "^4.6.0",
+        "bootstrap-vue": "^2.21.2",
+        "laravel-echo": "^1.11.2",
+        "pusher-js": "^7.0.3",
+        "v-calendar": "^2.3.2",
+        "v-video-embed": "^1.0.8",
+        "vue": "^2.6.14",
+        "vue-quill-editor": "^3.0.6",
+        "vue-router": "^3.5.2",
+        "vuescroll": "^4.17.3",
+        "vuex": "^3.6.2"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}

@@ -1,0 +1,131 @@
+.notifications {
+  position: absolute;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  top: 80px;
+  right: 40px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1000;
+  width: 260px;
+  height: 330px;
+
+  &-box {
+    width: 100%;
+    height: 300px;
+    padding-right: 5px;
+  }
+
+  &-wrapper {
+    overflow-y: auto;
+  }
+
+  &-item {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    transition: background-color .3s;
+    font-size: 14px;
+
+    &__link, &__span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 10px 30px 25px 15px;
+
+      &.read {
+      }
+
+      &.no-read {
+        font-weight: bold;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      transition: color .3s;
+      color: black;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #F6F6F3;
+      }
+    }
+
+    .btn-close {
+      position: absolute;
+      bottom: 5px;
+      left: 15px;
+      font-size: 12px;
+      cursor: pointer;
+      color: #b5b1b1;
+      transition: color .3s;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    .date {
+      position: absolute;
+      bottom: 5px;
+      right: 15px;
+      font-size: 12px;
+      color: #b5b1b1;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top: 1px solid #E5E5E5;
+    background-color: $back-buttons-first;
+    cursor: pointer;
+    color: $color-main-white;
+    transition: .3s;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    text-transform: lowercase;
+
+    span {
+      padding-bottom: 4px;
+    }
+
+    &:hover {
+      background-color: $back-sidebar;
+      color: black;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    top: 67px;
+  }
+
+  @media (max-width: 586px) {
+    top: 67px;
+    width: 100%;
+    right: 0;
+    height: calc(100vh - 67px);
+
+    &-box {
+      height: calc(100% - 40px);
+    }
+
+    &-button {
+      height: 40px;
+      font-size: 16px;
+    }
+
+    &-wrapper {
+      width: 100%;
+    }
+  }
+}

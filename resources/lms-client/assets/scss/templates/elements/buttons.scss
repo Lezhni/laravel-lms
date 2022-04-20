@@ -1,0 +1,124 @@
+.button-blue {
+  padding: 10px 14px;
+  background-color: $back-buttons-first;
+
+  span {
+    color: white;
+    transition: .2s;
+    margin-left: 15px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: white !important;
+    border: 1px solid $back-buttons-first !important;
+    color: $back-buttons-first !important;
+
+    span {
+      color: $color-main-black !important;
+    }
+  }
+}
+
+.button-orange {
+  padding: 10px 20px;
+  background-color: $back-buttons-second;
+  border: 1px solid $back-buttons-second !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: white !important;
+    border: 1px solid $back-buttons-second !important;
+    color: $back-buttons-second !important;
+
+    span {
+      color: $color-main-black !important;
+    }
+  }
+
+  span {
+    margin-left: 15px;
+  }
+}
+
+.courses-tab-button {
+  .nav-link {
+    &.active {
+      padding: 14px;
+      background-color: $back-buttons-first;
+      transition: .2s;
+
+      &:hover {
+        background-color: white !important;
+        border: 1px solid $color-main-black !important;
+        color: $color-main-black !important;
+      }
+    }
+  }
+}
+
+.button-icon-right {
+  span {
+    margin: 0 10px 0 0;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  path {
+    transition: fill .15s ease-in-out;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    path {
+      fill: $back-buttons-first;
+    }
+  }
+}
+
+.btn-warning {
+  background-color: $back-buttons;
+  color: $color-buttons;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $back-buttons;
+    color: $color-buttons;
+    opacity: 0.7;
+  }
+}
+
+.btn-link {
+  color: $color-primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-primary-dark;
+
+    path {
+      fill: $color-primary-dark;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  button.adaptive-btn {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sale-block {
+    .button-icon-right:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

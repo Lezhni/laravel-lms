@@ -1,0 +1,20 @@
+<template>
+  <div class="content-wrapper mb-3" :class="content['layout']">
+    {{content.attributes.text}}
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    content: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>

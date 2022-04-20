@@ -1,0 +1,32 @@
+
+@import "./utils/animations";
+@import './utils/fonts.scss';
+
+@import "./utils/vars";
+
+@import "./utils/reset-bootstrap";
+@import "./templates/elements/buttons";
+@import "./templates/elements/breadcrumb";
+@import "./templates/elements/overlay";
+@import "./templates/elements/attachment";
+
+@import "./templates/interface";
+@import "./templates/content";
+@import "./templates/header";
+@import "./templates/footer";
+@import "./templates/sidebar";
+@import "./templates/progress";
+@import "./templates/calendar";
+@import "./templates/quill";
+@import "./templates/iti";
+@import "./templates/scrollbar";
+@import "./templates/notifications";
+@import "./templates/login";
+
+
+@import "./templates/courses";
+@import "./templates/course";
+@import "./templates/courses-item";
+@import "./templates/profile";
+@import "./templates/support";
+@import "./templates/not-found";

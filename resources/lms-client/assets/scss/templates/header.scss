@@ -1,0 +1,154 @@
+.header {
+  position: relative;
+  z-index: 100;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid $border-gray-light;
+  background-color: $back-white;
+
+  .navbar-brand {
+    width: 200px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .navbar-toggler {
+    border: 2px solid $border-primary;
+  }
+
+  .navbar-dropdown-block {
+    margin-left: 50px;
+
+    .dropdown-toggle {
+      outline: none;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-dropdown-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      font-family: 'Montserrat Bold', sans-serif;
+      color: $color-second;
+      font-weight: 600;
+    }
+  }
+
+  .navbar-button {
+
+  }
+
+  .splitter {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 1px;
+    height: 20px;
+    background-color: #06263e;
+    opacity: .2;
+  }
+
+  .navbar-bell {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: $back-white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background-color: $back-gray-medium;
+    }
+
+    svg {
+      fill: $back-primary;
+    }
+
+    &.animate {
+      animation-name: ring;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    &.no-read:after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #fe8d30;
+      position: absolute;
+      top: 7px;
+      right: 6px;
+    }
+
+    &-wrapper {
+      position: relative;
+      margin-right: 20px;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $back-primary;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+      }
+    }
+  }
+
+  //.catalog-btn {
+  //  background-color: #fe8d30;
+  //
+  //  a {
+  //    color: $color-main-white !important;
+  //  }
+  //}
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+    .navbar-brand {
+      display: block;
+      width: 150px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

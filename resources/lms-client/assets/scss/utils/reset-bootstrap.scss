@@ -1,0 +1,62 @@
+.bg-info {
+  background-color: #4f6eb6 !important;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #fe8d30;
+  border-color: #fe8d30;
+}
+
+.btn.btn-outline-primary {
+  color: #fe8d30;
+  border: 1px solid #fe8d30 !important;
+
+  &:hover, &:active, &:focus {
+    color: #fff !important;
+    background-color: #fe8d30 !important;
+    border: 1px solid #fe8d30 !important;
+  }
+}
+
+.btn.btn-primary {
+  color: white;
+  border: 1px solid #fe8d30 !important;
+
+  &:hover, &:active, &:focus {
+    color: #fff !important;
+    background-color: darken(#fe8d30, 15%) !important;
+    border: 1px solid darken(#fe8d30, 15%) !important;
+  }
+}
+
+.btn.btn-info {
+  color: white;
+  background-color: #5775b9 !important;
+  border: 1px solid #5775b9 !important;
+
+  &:hover, &:active, &:focus {
+    color: #fff !important;
+    background-color: darken(#5775b9, 15%) !important;
+    border: 1px solid darken(#5775b9, 15%) !important;
+  }
+}
+
+.btn-sm {
+  line-height: 1;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+  outline: none !important;
+  //border: none !important;
+  box-shadow:none !important;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: $back-primary;
+}
